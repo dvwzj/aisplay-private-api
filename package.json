@@ -1,0 +1,33 @@
+{
+  "name": "aisplay-private-api",
+  "version": "1.0.0",
+  "description": "AIS Play Private API",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npx babel src --out-dir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvwzj/aisplay-private-api.git"
+  },
+  "author": "dvwzj <iguphai_@msn.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dvwzj/aisplay-private-api/issues"
+  },
+  "homepage": "https://github.com/dvwzj/aisplay-private-api#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "esm": "^3.2.25"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^3.17.5",
+    "lodash": "^4.17.20",
+    "moment-timezone": "^0.5.32",
+    "prompts": "^2.4.0",
+    "req-fast-promise": "^1.0.19"
+  }
+}
