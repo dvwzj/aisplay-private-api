@@ -5,7 +5,7 @@ import xmlParser from 'fast-xml-parser'
 
 export default class AISPLay {
     constructor(defaults) {
-        this.defaults = _.defaults({
+        this.defaults = _.merge({
             privateid: undefined,
             udid: undefined,
             baseURL: 'https://ss-app-tls.ais-vidnt.com',
