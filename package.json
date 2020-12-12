@@ -1,6 +1,6 @@
 {
   "name": "aisplay-private-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AIS Play Private API",
   "main": "lib/index.js",
   "scripts": {
