@@ -131,6 +131,9 @@ export default class AISPLay {
             const res = await this.$http.get('/playtemplate/', {
                 headers,
             })
+            if (!res.data.info) {
+                throw new Error('cannot get playtemplate')
+            }
             return res.data
         } catch (e) {
             console.error(e)
