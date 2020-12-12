@@ -197,7 +197,11 @@ export default class AISPLay {
             const playtemplate = await this.playtemplate()
             if (playtemplate) {
                 const info = playtemplate.info[type].replace(/{MID}/g, MID)
-                const res = await this.$http.get(info)
+                const res = await this.$http.get(info, {
+                    params: {
+                        cdn: 'aisvimmi-https'
+                    }
+                })
                 return xmlParser.parse(res.data)
             } else if (item) {
                 console.debug('try to get from media')
@@ -206,7 +210,11 @@ export default class AISPLay {
                     if (_.size(play.media)) {
                         const media = _.first(play.media)
                         if (media.link) {
-                            const res = await this.$http.get(media.link)
+                            const res = await this.$http.get(media.link, {
+                                params: {
+                                    cdn: 'aisvimmi-https'
+                                }
+                            })
                             return xmlParser.parse(res.data)
                         } else {
                             console.debug('empty media link')
