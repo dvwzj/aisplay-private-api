@@ -28,6 +28,6 @@
     "lodash": "^4.17.20",
     "moment-timezone": "^0.5.32",
     "prompts": "^2.4.0",
-    "req-fast-promise": "^1.0.19"
+    "req-fast-promise": "^1.0.20"
   }
 }
